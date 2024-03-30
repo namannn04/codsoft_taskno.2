@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: black;
+  min-height: 200px;
+  align-items: center;
+  justify-content: center;
+      flex-direction: column;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 50px;
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+
+
+
+.header{
+    height: 100px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.s24{
+    height: 60%;
+    width: 60%;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.big h1{
+  color: goldenrod;
+  font-size: 100px;
+}
+
+.big2{
+  color: whitesmoke;
+  font-size: 20px;
+  display: flex;
+  padding: 50px;
+  height: 200px;
+  width: 100%;
+}
+
+.img2{
+  height: 75%;
+  width: 75%;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+.s24-2{
+  position: relative;
+  right: 0px;
+}
+
+.part2{
+  background-color: rgb(51, 50, 50);
+  border-radius: 1%;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.part3{
+  background-color: rgb(51, 50, 50);
+  border-radius: 1%;
+  border: 2px solid black;
+  margin: 20px;
+  height: 600px;
+}
+
+.s24-3{
+  position: relative;
+  top: 25px;
+  left: 30px;
+  height: 75%;
+  
+}
+
+.img3{
+  display: flex;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.img h4{
+    color: white;
+    padding-left: 100px;
+    font-size: 70px;
+    padding-right: 100px;
+    
+}
+.ai p{
+  color: white;
+  margin: 30px;
+}
+
+.about{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(53, 52, 52);
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.about a{
+  text-decoration: none;
+  margin: 20px;
+  color: white;
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+.about a:hover{
+  opacity: 1;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+  height: 40px;
+
+}
+
+.image-zoom-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#zoom-image {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.magnifying-glass {
+  position: absolute;
+  width: 300px; /* Adjust the size of the magnifying glass */
+  height: 300px; /* Adjust the size of the magnifying glass */
+  border: 2px solid #FFF;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5); /* Adjust the background color and transparency */
+  pointer-events: none; /* Ensures the magnifying glass doesn't interfere with mouse events on the image */
+  display: none;
+  background-size: cover;
+}
+
+#image-container:hover .magnifying-glass {
+  display: block;
+}
+
+
+ul {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #dd98df, #726994);
+  transition: .5s;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.social{
+  position: relative;
+  top: 300px;
+  display:block;
+  background: linear-gradient(0deg, #e3ff2d, #00ffee);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+ul li:nth-child(1) a:hover .fab {
+  color: #004bed;
+}
+
+ul li:nth-child(2) a:hover .fab {
+  color: #00bbff;
+}
+
+ul li:nth-child(3) a:hover .fab {
+  color: #ff1e00;
+}
+
+ul li:nth-child(4) a:hover .fab {
+  color: #058ecd;
+}
+
+ul li:nth-child(5) a:hover .fab {
+  color: #ff2e55;
+}
+
+.social{
+  height: 20px;
+  width: 100%;
+}
+
